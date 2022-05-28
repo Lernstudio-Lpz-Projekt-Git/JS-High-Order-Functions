@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: azure;
+  background-color: #263130;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 93%;
+  margin: 20px auto;
+  padding: 20px;
+  font-weight: 100;
+  line-height: 1.5;
+  border: 1px #ffffff dotted;
+}
+
+a {
+  color: coral;
+}
+
+p {
+  padding: 10px 0;
+}
+
+#app {
+  display: inline;
+  text-align: left;
+  color: #2c3e50;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h3 {
+  color: chocolate;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+h1 {
+  color: rgb(255, 166, 0);
+  font-weight: 300;
+  font-size: 1.9rem;
+}
+
+h4 {
+  color: rgb(158, 255, 201);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+hr {
+  margin: 40px 0;
+}
+
+.txt {
+  font-size: 1.2rem;
+  width: 90%;
+
+}
+
+.ausgabe {
+  display: block;
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  font-size: 1.2rem;
+  margin:  10px auto;
+}
+
+.loesung {
+  display: block;
+  background-color: azure;
+  color: rgb(0, 0, 0);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  text-align: left;
+  font-size: 1.2rem;
+  margin:  10px auto;
+  padding: 4px;
+}
+
+ul {
+  color: rgb(158, 255, 201);
+  font-family: 'Courier New', Courier, monospace;
+  list-style: none;
+}
+
+.author {
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  text-align:right;
+  font-size: .9rem;
+}
+
+section {
+  background-color: #374746;
+  border: 1px rgb(255, 228, 209) dotted;
+  padding: 10px 10px;
+  margin: 10px;
+  width: 45%;
+  min-width: 600px;
+}
+
+.descr {
+  color: aliceblue;
+  text-align: left;
+  font-size: 1.2rem;
+  letter-spacing: .04em;
+  font-weight: 100;
+  margin:  2px auto;
+}
+
+b {
+  font-weight: 800 !important;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(158, 255, 201);
+}
