@@ -1,7 +1,7 @@
 # <o>JAVASCRIPT Higher Order Functions</o>
 
 ## <g>Beschreibung</g>
-
+<p>Dieses Repository stellt Aufgaben zur Verfügung um <g>Higher order functions</g> besser zu verstehen.</p>
 <p>Funktionen höherer Ordnung in JavaScript sind eine spezielle Kategorie von Funktionen, die entweder Funktionen als Argument akzeptieren oder Funktionen zurückgeben. Funktionen höherer Ordnung bieten den Vorteil der Wiederverwendbarkeit: Das Hauptverhalten wird von der Funktion höherer Ordnung selbst bereitgestellt, und indem Sie eine Funktion als Argument akzeptieren, erweitern Sie dieses Verhalten nach Belieben. Der Begriff stammt aus der Mathematik, wo die Unterscheidung zwischen Funktionen und anderen Werten strikter definiert wird.</p>
 
 <p>Um High-Order-Funktionen und reguläre Schleifen-Funktionen besser zu verstehen, werden wir im Folgenden mehrere Übungsaufgaben zu diesem Thema durchzuführen. Gegeben sind High-Order-Funktionen, die in mögliche Statements für Schleifen umgewandelt werden sollen.</p>
