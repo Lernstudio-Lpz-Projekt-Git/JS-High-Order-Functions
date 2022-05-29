@@ -119,7 +119,7 @@ section {
   padding: 10px 10px;
   margin: 10px;
   width: 45%;
-  min-width: 600px;
+  min-width: 640px;
 }
 
 .descr {
@@ -129,6 +129,16 @@ section {
   letter-spacing: .04em;
   font-weight: 100;
   margin:  2px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color:#ffffff;
+  border-bottom: 1px dotted #fff;
+  padding-bottom: 2px;
 }
 
 b {

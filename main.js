@@ -2,40 +2,47 @@ import './style.css'
 
 //////////////////////// BEISPIEL-AUFGABE /////////////////////////////////
 
-import {sequence, ausgabe} from "./example";
+import { sequence, ausgabe } from "./example";
 import loesung from "./example";
 
 //////////////////////// AUFGABE 1 //////////////////////////////////////
 
-import {digits, ausgabe1} from "./exercise-1";
+import { digits, ausgabe1 } from "./exercise-1";
 import loesung1 from "./exercise-1";
 
 //////////////////////// AUFGABE 2 /////////////////////////////////
 
-import {users, ausgabe2} from "./exercise-2";
+import { users, ausgabe2 } from "./exercise-2";
 import loesung2 from "./exercise-2";
 
 //////////////////////// AUFGABE 3 /////////////////////////////////
 
-import {allAges, ausgabe3} from "./exercise-3";
+import { allAges, ausgabe3 } from "./exercise-3";
 import loesung3 from "./exercise-3";
 
 //////////////////////// AUFGABE 4 /////////////////////////////////
 
-import {intArray, ausgabePow, ausgabeRad} from "./exercise-4";
+import { intArray, ausgabePow, ausgabeRad } from "./exercise-4";
 import loesungWurzel from "./exercise-4";
 import loesungExponent from "./exercise-4";
 
 //////////////////////// AUFGABE 5 /////////////////////////////////
 
-import {FILTER, dataLength, ausgabe5} from "./exercise-5";
+import { FILTER, dataLength, ausgabe5 } from "./exercise-5";
 import loesung5 from "./exercise-5";
 
 //////////////////////// AUFGABE 6 /////////////////////////////////
 
-import { classroom } from "./classroom";
 import { studentsCount, ausgabe6 } from "./exercise-6";
 import loesung6 from "./exercise-6";
+
+//////////////////////// AUFGABE 7 /////////////////////////////////
+
+import { seqCount, sequence7 } from "./sequence7";
+import { ausgabe7 } from "./exercise-7";
+import loesung7 from "./exercise-7";
+
+const seqItems = sequence7.map(seq => seq.name + ', ' + seq.age + ', ' + seq.gender + ', ' + seq.food  + ', ' + seq.weight);
 
 //////////////////////// AUSGABE HTML /////////////////////////////////
 
@@ -70,7 +77,7 @@ document.querySelector('#app').innerHTML = `
 <section>
     <h1>Aufgabe 2</h1>
     <p class="descr"><b>Beschreibung:</b> Eine weitere sehr typische Problemstellung besteht darin, 
-    dass Sie alle Elemente eines Arrays durch einen spezifischen Algorithmus weiterverarbeiten möchten.
+    dass Sie alle Elemente eines Arrays durch einen spezifischen Algorithmus weiterverarbeiten sollen.
     Das Ausgabeformat sieht vor, den Vornamen abzukürzen. Außerdem müssen es Strings sein, damit sie sich direkt auf der Website ausgegeben lassen. 
     So sollen Sie z. B. das Objekt {name: 'Reich', firstName: 'Frank'} in den String "F. Reich" konvertieren.
     Sortieren Sie alle Eintrage nach dem Nachnamen.</p>
@@ -159,5 +166,23 @@ document.querySelector('#app').innerHTML = `
     Die höchste Benotung bei Frauen beträgt ${ausgabe6[5]}, die niederigste ${ausgabe6[6]}.</p></blockquote>
     <h4>Ausgabe Ihrer Lösung:</h4>
     <p class="loesung"> ${loesung6()}</p>
+</section>
+
+<!-- Aufgabe 7  -->
+<section>
+    <h1>Aufgabe 7</h1>
+    <p class="descr"><b>Beschreibung: </b>Funktionen höherer Ordnung brillieren, wenn man beginnt, sie zu komponieren. 
+    Es gibt viele Gründe, warum man sie komponieren sollte. In dieser Aufgabe wollen wir verhindern, 
+    dass JavaScript in Schleife für jede .filter-Operation über das Objekt-Array iteriert.
+    Gegeben ist eine JSON-Objekt mit ${seqCount} Einträgen.</p>
+    <p class="descr">Analsysieren Sie den Code und experimentieren Sie mit eigenen Filtern.
+    Wandeln Sie die Higher-Order-Funktion im Code in reguläre Schleifen-Funktionen um.
+    </p>
+    <h4>Ausgangssequenz:</h4>
+    <p class="ausgabe">${JSON.stringify(seqItems)}</p>
+    <h4>Lösungsbeispiel:</h4>
+    <p class="ausgabe"> ${JSON.stringify(ausgabe7)}</p>
+    <h4>Ausgabe Ihrer Lösung:</h4>
+    <p class="loesung"> ${loesung7()}</p>
 </section>
 `
